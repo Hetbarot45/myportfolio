@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROFILE</title>
+    <link rel="icon" href="png-transparent-user-profile-computer-icons-login-user-avatars.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5bf241412f.js" crossorigin="anonymous"></script>
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+      
+</head>
+
+<body>
+    <!-- NAVBAR SECTION -->
+    <div id="headpart">
+        WELCOME TO MY PROFILE
+    </div>
+    <div class="navbar">
+        <div class="logopart">
+            <i class="fa fa-user-circle-o"></i>
+            <h2 id="headprofile">MY PROFILE</h2>
+        </div>
+        <div class="linkpart">
+            <a href="#m">MYSELF</a>
+            <a href="#e" id="ed">EDUCATION</a>
+            <a href="#s" id="sk">SKILLS</a>
+            <a href="#h" id="hb">HOBBIES</a>
+            <a href="#o" id="lg">THANK YOU</a>
+        </div>
+    </div>
+    <!-- MYSELF SECTION -->
+    <div id="myself">
+        <div id="sel">
+            <div class="myself">
+                <video autoplay muted loop src="Wallpaper - 72519.mp4" type="video/mp4" id="mainvideo"></video>
+                <div class="container">
+                    <h1>HET BAROT</h1>
+                    <p><i class="fa fa-envelope"></i>Email : hetbarot10@gmail.com</p>
+                    <p><i class="fa fa-phone-square"></i>Mobile No : +91 9265406601 </p>
+                    <p><i class="fa fa-home"></i>Hometown : Ahmedabad</p>
+                    <p><i class="fa fa-map-marker"></i>Working Location : Ahmedabad</p>
+                    <p><i class="fa fa-linkedin-square"></i>Linkedin : <a
+                            href="https://www.linkedin.com/in/het-barot-ba459b215" target="_blank">Visit here</a></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <br/>
+        <br/>
+        <br/>
+
+
+        <!--EDUCATION-->
+        <div id="e">
+            <div class="education">
+
+                <video autoplay muted loop src="codingvideo.mp4" type="video/mp4" id="mainvideo"></video>
+                <div class="container" id="edu">
+                    <h1>EDUCATION</h1>
+                    <h3> 12th Science (march-2019):</h3>
+                    <p style="margin-left: 200px;"> School name : H.B.Kapadia new high School</p>
+                    <p style="margin-left:200px;"> Percentage: 67% </p>
+                    <h3> Degree:</h3>
+                    <p style="margin-left: 200px;"> University name : Aditya Silver Oak University</p>
+                    <p style="margin-left:200px;">  Course name: B.Tech,Computer Engineering (2020-24) </p>
+                </div>
+            </div>
+        </div>
+
+        <!--skills-->
+        <div id="s">
+            <div class="education">
+
+                <video autoplay muted loop src="coding.mp4" type="video/mp4" id="mainvideo"></video>
+                <div class="container" id="skill">
+                    <h1>MY SKILLS</h1>
+
+                    <p style="margin-left: 200px;">&#8226   C PROGRAMMING LANGUAGE </p>
+                    <p style="margin-left:200px;">&#8226  JAVA</p>
+                    <p style="margin-left: 200px;">&#8226   PYTHON PROGRAMMING</p>
+                    <p style="margin-left:200px;">&#8226   HTML</p>
+                    <p style="margin-left:200px;">&#8226   CSS</p>
+                    <p style="margin-left:200px;">&#8226   JAVASCRIPT</p>
+                </div>
+            </div>
+        </div>
+        <!--hobbies-->
+        <div id="h">
+            <div class="education">
+
+                <video autoplay muted loop src="codind2.mp4" type="video/mp4" id="mainvideo"></video>
+                <div class="container" id="hobb">
+                    <h1>Hobbies</h1>
+
+                    <p style="margin-left: 200px;">&#8226  Playing Videogames</p>
+                    <p style="margin-left:200px;">&#8226   Cricket</p>
+                    <p style="margin-left: 200px;">&#8226  Swimming</p>
+                    <p style="margin-left:200px;">&#8226   Vollyball</p>
+                    <p style="margin-left:200px;">&#8226   Traveling</p>
+                    <p style="margin-left:200px;">&#8226   Listening Music and rest hobbies keeps on changing</p>
+                </div>
+            </div>
+        </div>
+        <!--others-->
+        <div id="o">
+            <div class="education" style="background-color:black ;">
+                <div class="container">
+                    
+                    <img src="thankyou.jpg" style="margin-top:40px;margin-left:170px;">
+                                  
+                </div>
+              
+                </div>
+            </div>
+        </div>
+        <script>
+            function self() {
+                document.getElementById('ed').style.display = "none";
+                document.getElementById('sel').style.display="flex";
+                document.getElementById('hb').style.display="none";
+                document.getElementById('ot').style.display="none";
+                document.getElementById('sk').style.display="none"; 
+            }
+            function edu() {
+                document.getElementById('sel').style.display = "none";
+                document.getElementById('ed').style.display="flex";
+                document.getElementById('hb').style.display="none";
+                document.getElementById('ot').style.display="none";
+                document.getElementById('sk').style.display="none";
+            }
+            function skill(){
+                document.getElementById('sk').style.display="flex";
+                document.getElementById('sel').style.display="none";
+                document.getElementById('ed').style.display="none";
+                document.getElementById('ot').style.display="none";
+                document.getElementById('hb').style.display="none";
+            }
+            function hobbies(){
+                document.getElementById('sk').style.display="none";
+                document.getElementById('hb').style.display="flex";
+                document.getElementById('sel').style.display="none";
+                document.getElementById('ed').style.display="none";
+                document.getElementById('ot').style.display="none";
+
+            }
+            function other(){
+                document.getElementById('sk').style.display="none";
+                document.getElementById('hb').style.display="none";
+                document.getElementById('ot').style.display="flex";
+                document.getElementById('sel').style.display="none";
+                document.getElementById('ed').style.display="none";
+            }
+
+        </script>
+</body>
+
+</html>
